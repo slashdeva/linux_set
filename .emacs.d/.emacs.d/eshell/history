@@ -1,0 +1,128 @@
+cd Downloads/
+ls
+cd ..
+ls
+cd Pci
+cd Pictures/
+ls
+cd ~/.emacs.d/
+ls
+cd plugins/
+ls
+tar -xzvf ~/Pictures/auto-complete-1.5.0.tar.gz
+ls
+mv auto-complete
+mv auto-complete-1.5.0/ auto-complete
+ls
+mv auto-complete-etags/ ac-etags
+ls
+ls
+cd ~/.emacs.d/
+ls
+cd plugins/
+ls
+cd auto-complete/
+ls
+tar -xzvf ~/Pictures/popup-el-0.5.2.tar.gz 
+ls
+mv popup-el-0.5.2/ popup
+ls
+cd ..
+ls
+ls
+ls
+cd .emacs.d/
+ls
+cd plugins/
+ls
+make lisp docs
+make lisp
+ls
+make
+sudo yum install makeinfo
+ls
+make clean
+make -j
+ls
+cd ..
+ls
+cd ecb/
+ls
+make -j
+ls
+ls
+ls
+cd Downloads/
+ls
+cd /
+ls
+cd bin/
+ls
+cd ..
+ls
+cd usr/bin/
+ls | grep emacs
+emacs
+emacs -nw
+ls
+cd plugins/
+ls
+cd ecb/
+ls
+make [EMACS="/usr/bin/emacs"] [CEDET="../cedet"]
+make
+ls
+ls
+cd ..
+ls
+rm -rf cedet/
+ls
+tar -xzvf ~/Pictures/ecb-2.40.tar.gz
+ls
+rm -rf ecb
+mv ecb-2.40/ ecb
+ls
+ls
+cd workspace/
+ls
+cd ..
+ls
+cd Documents/
+ls
+cd ~/.emacs.d/
+ls
+cd plugins/
+ls
+rm -rf ecb/
+ls
+(when (load "flymake" t) (defun flymake-pylint-init ()   (let* ((temp-file (flymake-init-create-temp-buffer-copy                      'flymake-create-temp-inplace))          (local-file (file-relative-name                       temp-file                       (file-name-directory buffer-file-name))))         (list "pep8" (list "--repeat" local-file)))) (add-to-list 'flymake-allowed-file-name-masks              '("\\.py\\'" flymake-pylint-init)))
+(defun my-flymake-show-help ()  (when (get-char-property (point) 'flymake-overlay)    (let ((help (get-char-property (point) 'help-echo)))      (if help (message "%s" help)))))
+git clone https://github.com/alexott/ecb
+ls
+ls
+ls
+ls
+ls
+dos2unix Downloads/index\(1\).jsp
+ls
+cd Downloads/
+ls
+rm index*
+ls
+ls
+ls
+dos2unix index.jsp 
+ls
+ls
+cd .emacs.d/
+ls
+cd plugins/
+ls
+mkdir cursor-chg
+cd cursor-chg/
+ls
+wget https://raw.githubusercontent.com/emacsmirror/emacswiki.org/master/cursor-chg.el
+ls
+ls
+cd ..
+ls
