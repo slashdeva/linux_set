@@ -18,6 +18,7 @@
 	(("gnu" . "http://elpa.gnu.org/packages/")
 	 ("melpa" . "http://stable.melpa.org/packages/"))))
  '(red "#ffffff")
+ '(tool-bar-mode nil)
  '(send-mail-function nil)
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
@@ -85,6 +86,24 @@
 ;;emacs base set
 (global-linum-mode 1)
 (global-hl-line-mode 1)
+
+;(**************OS dependency**************)
+;***************Windows Set******************
+;(setenv "PATH"
+;	(concat
+	 ;; Change this with your path to MSYS bin directory
+;	 "C:\\MinGW\\msys\\1.0\\bin;"
+;	 (getenv "PATH")))
+; windows default-directory
+;(setq default-directory "C:/Users/Deva/")
+
+;windows set Ctrl-space to Mark
+;(global-set-key [C-kanji] 'set-mark-command)
+
+;***************Linux Set*******************
+(setq default-directory "~/Document/workspace")
+
+;(**************OS dependency**************)
 
 ;;eww - default search engine set
 (setq eww-search-prefix                 "https://www.google.com/search?q=")
